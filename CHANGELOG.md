@@ -1,15 +1,26 @@
-# Release Notes
+# Cappuccino Desafio Full Stack
 
-## v5.4.16 (2017-03-17)
+A API foi desenvolvida em Laravel 5.4;
+O Front end foi desenvolvido em Angular CLI na versão 6.2.1
 
-### Added
-- Added `unix_socket` to `mysql` in `config/database.php` ()[#4179](https://github.com/laravel/laravel/pull/4179))
-- Added Pusher example code to `bootstrap.js` ([31c2623](https://github.com/laravel/laravel/commit/31c262301899b6cd1a4ce2631ad0e313b444b131))
+Os repositórios originais:
+- https://github.com/PedroLiions/capuccino-desafio-backend
+- https://github.com/PedroLiions/capuccino-desafio-front
 
-### Changed
-- Use `smtp.mailtrap.io` as default `MAIL_HOST` ([#4182](https://github.com/laravel/laravel/pull/4182))
-- Use `resource_path()` in `config/view.php` ([#4165](https://github.com/laravel/laravel/pull/4165))
-- Use `cross-env` binary ([#4167](https://github.com/laravel/laravel/pull/4167))
+## Passos para executar a API.
 
-### Removed
-- Remove index from password reset `token` column ([#4180](https://github.com/laravel/laravel/pull/4180))
+- Renomear o arquivo .env.example para .env
+- Gerar uma key no Laravel, na raíz do projeto executar o comando no terminal <code>php artisan key:generate</code>
+- Criar um banco de dados e configurar no arquivo .env
+- Gerar as migrations, na raíz do projeto executar <code> php artisan migrate </code>
+- Para rodar o projeto <code> php artisan serve </code>
+
+# Nota
+- A aplicação Front end já está buildada e configurada dentro do projeto
+- A API deve rodar na porta 8000, com o dominio local
+
+
+<p>A aplicação está disponível também para teste no seguinte endereço: http://apicappuccino.plima.me Usuário padrão: admin@admin.com senha: admin, também pode cadastrar um usuário novo.</p>
+-
+
+
